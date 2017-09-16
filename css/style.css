@@ -1,0 +1,97 @@
+@media all and (min-width:300px)  {
+
+	body {
+		background-color: green;
+	}
+	.box {
+		width: 400px;
+		height: 400px;
+		background-color: aqua;
+		margin-bottom:  1px;
+		display: none;
+	}
+	.showcase__slides li {
+		width: 100%;
+		height: 56.25vw;
+		background-color: limegreen;
+		display: none;
+	}
+	.showcase {
+		position: relative;
+	}
+	.showcase__controls {
+		width: 100%;
+		background-color: violet;
+		position: absolute;
+		bottom: 20px;
+		left: 0px;
+		text-align: center;  /*centers text of child*/
+	}
+	.showcase__controls li {
+		width: 30px;
+		height: 30px;
+		background-color: white;
+		display: inline-block;   /*this makes it go horizontal.  float left would make it impossible to push children over to center.  makes the box's free birds*/
+		margin: 0px 5px;
+		border-radius: 50%;
+		line-height: 30px;    /*vertically centers text*/
+		cursor: pointer;
+	}
+	.showcase__controls li.active {
+		background-color: orange;
+	}
+	.slider {
+		height: 500px;
+		background-color: orange;
+		overflow: hidden;
+		position: relative;
+	}
+	.slider ul {
+		width: 2880px;	
+	}
+	.slider__arrow {
+		width: 50px;
+		height: 50px;
+		background-color: magenta;
+		display: block;  /*must make all atags block to manipulate */
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+	}
+	.slider__arrow--left {
+		left: 0px;
+	}
+	.slider__arrow--right {
+		right: 0px;
+	}
+	.slider ul li {
+		width: 300px;
+		height: 500px;
+		background-color: yellow;
+		float: left;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	ul {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+
+}  /*mobile base styles end */
+
+@media all and (min-width: 700)  {
+
+	body {
+		background-color: blue;
+	}
+
+}  /*tablet base styles end */
+
+@media all and (min-width: 992)  {
+
+	body {
+		background-color: green;
+	}
+
+}  /*desktop base styles end */
